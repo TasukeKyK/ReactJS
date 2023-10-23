@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeCard</title>
+  </head>
+  <body>
+    <header class="album-head">
+      <h1 class="album-head__title">Pokédex</h1>
+    </header>
+    <main class="album-main">
+      <section class="pokemon-album">
+        <article class="pokemon-card">
+          <div class="pokemon-card__background-color"></div>
+          <figure class="pokemon-card__picture">
+            <img
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/female/25.png"
+              class="pokemon-card__img"
+              alt="Pokemón"
+            />
+          </figure>
+          <div class="pokemon-card__data">
+            <p class="pokemon-card__data__name">charmander</p>
+            <p class="pokemon-card__data__hp">107hp</p>
+            <p class="pokemon-card__data__type">Fuego</p>
+          </div>
+          <footer class="pokemon-card__stats">
+            <div class="pokemon-information">
+              <p class="pokemon-information__text">Defensa</p>
+              <p class="pokemon-information__defense">20hp</p>
+            </div>
+            <div class="pokemon-information">
+              <p class="pokemon-information__text">Ataque</p>
+              <p class="pokemon-information__stroke">45hp</p>
+            </div>
+            <div class="pokemon-information">
+              <p class="pokemon-information__text">Velocidad</p>
+              <p class="pokemon-information__speed">100hp</p>
+            </div>
+          
+          </footer>
+        </article>
+      </section>
+    
+    </main>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

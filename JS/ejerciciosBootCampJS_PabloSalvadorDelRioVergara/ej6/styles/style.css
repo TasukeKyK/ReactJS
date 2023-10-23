@@ -1,0 +1,15 @@
+.hidden-block {
+  display: none;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+#ficha1 {
+  background-color: greenyellow;
+}
+#ficha2 {
+  background-color: lightblue;
+}
+#ficha3 {
+  background-color: lightcoral;
+}

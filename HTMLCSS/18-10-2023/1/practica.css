@@ -1,0 +1,129 @@
+/* .gallery{
+    &__container{
+
+    }
+    &__tittle{
+
+    }
+    &__wrapper{
+
+    }
+    .card{
+        &__figure{
+            &-image{
+
+            }
+            &--horizontal{
+
+            }
+        }
+        &__container{
+
+        }
+        &__date{
+
+        }
+        &__text{
+
+        }
+        &__title{
+
+        }
+        &__paragraph{
+
+        }
+
+
+    }
+}
+ */
+:root {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #fdfeff;
+}
+
+.galery {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.galery__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.galery__title {
+  background: #122999;
+  background: linear-gradient(to right, #122999 0%, #FF0DCF 100%);
+  /*         -webkit-background-clip: text;
+   */
+  -webkit-text-fill-color: transparent;
+  font-size: 55px;
+}
+.galery__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  gap: 25px;
+}
+.galery .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 12px 44px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 16px;
+}
+.galery .card__figure {
+  margin: 0;
+  height: 200px;
+  width: 100%;
+}
+.galery .card__figure--horizontal {
+  height: auto;
+  min-width: 200px;
+}
+.galery .card__figure-image {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.galery .card__figure-image--horizontal {
+  border-radius: unset;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.galery .card__container {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 20px;
+}
+.galery .card__date {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.galery .card__title {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.galery .card__paragraph {
+  font-size: 20px;
+}
+.galery .card__container--background {
+  padding: 20px 8px;
+  border-radius: unset;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: #505050;
+  color: #ffffff;
+}
+.galery .card--horizontal {
+  flex-direction: row;
+}

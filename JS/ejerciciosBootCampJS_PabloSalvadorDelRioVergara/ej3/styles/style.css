@@ -1,0 +1,9 @@
+#registration-form {
+  width: 34%;
+  height: 400px;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+input {
+  width: 600px;
+}

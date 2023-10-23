@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="practica.css" />
+
+    <!-- <link rel="stylesheet/less" type="text/css" href="bem.scss" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <title>Práctica de BEM</title>
+</head>
+
+<body>
+    <!-- ESTE ES NUESTRO BLOQUE -->
+    <div class="galery">
+        <!-- ESTOS SON NUESTROS ELEMENTOS -->
+        <div class="galery__container">
+            <h1 class="galery__title">Hola Mundo</h1>
+            <div class="galery__wrapper">
+                <!-- ESTA ES NESTRA CARD GENÉRICA Y TAMBIÉN SERÍA UN BLOQUE -->
+                <div class="card">
+                    <figure class="card__figure">
+                        <img src="gato11.jpg" class="card__figure-image">
+                    </figure>
+                    <div class="card__container">
+                        <div class="card__date">20 de Enero de 2023</div>
+                        <div class="card__text">
+                            <div class="card__title">Govindasana position</div>
+                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolor nemo natus.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ESTA ES NUESTRA CARD MODIFICADA -->
+                <!-- AQUÍ TENEMOS UN MODIFICADOR -->
+                <!-- ponemos las dos clases, la genérica para que aplique los estilos genéricos
+                    y la clase modificada para cambiar los estilos que deseemos sobreescribir -->
+                
+                
+                <div class="card card--horizontal">
+                    <figure class="card__figure card__figure--horizontal">
+                        <img src="gato22.jpg" class="card__figure-image card__figure-image--horizontal">
+                    </figure>
+                    <div class="card__container card__container--background">
+                        <div class="card__date">20 de Mayo de 2023</div>
+                        <div class="card__text">
+                            <div class="card__title">¡Admírame!</div>
+                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, exercitationem mollitia. Itaque accusamus quas consequuntur doloribus placeat et voluptatibus consectetur!</p>
+                            <p class="card__paragraph">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

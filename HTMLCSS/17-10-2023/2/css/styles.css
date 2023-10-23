@@ -1,0 +1,31 @@
+#div1 {
+    font-size: 16px;
+  }
+  
+  #div2 {
+    font-size: 2em;
+    /* font-size: 32px; */
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  #div3 {
+    font-size: 64px;
+    font-weight: bold;
+  }
+  
+  /* 請使用 rem */
+  #div4 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  #div5{
+    padding-left: 0.5rem;
+  }
+  
+  html{
+    font-size: 1rem;
+  }

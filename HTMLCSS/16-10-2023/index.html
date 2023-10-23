@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo 12</title>
+    <link rel="stylesheet" href="practica-especificidad.css" />
+  </head>
+
+  <body style="margin-top: 100px">
+    <div class="container">
+      <h1 class="titulo">Ejercicio 1</h1>
+      <p class="ejercicio-1">
+        Escribe una regla que sea (0,0,1) de especificidad para cambiarme el
+        color.
+      </p>
+    </div>
+    <div class="container">
+      <h1 class="titulo">Ejercicio 2</h1>
+      <p id="ejercicio-2">
+        Escribe una regla que sea (0,1,0) de especificidad para cambiarme el
+        color.
+      </p>
+    </div>
+    <div class="container">
+      <h1 class="titulo">Ejercicio 3</h1>
+      <p class="ejercicio-3">
+        Escribe una regla que sea (0,1,0) de especificidad para cambiarme el
+        color, pero que no cambie el del &lt;p&gt; del ejericio 1.
+      </p>
+    </div>
+    <div class="container">
+      <h1 class="titulo">Ejercicio 4</h1>
+      <p class="ejercicio-4" id="parrafo">
+        Escribe una regla que sea (1,0,0) de especificidad para cambiarme el
+        color.
+      </p>
+    </div>
+    <div class="container">
+      <h1 class="titulo">Ejercicio 5</h1>
+      <p class="ejercicio-esp" id="parrafo">
+        Escribe una regla para cambiarme el color sin que cambien los estilos
+        del ejercicio 4.
+      </p>
+    </div>
+    <div class="container">
+      <h1 class="titulo">Ejercicio 6</h1>
+      <section>
+        <p class="ejercicio-esp" id="parrafo">
+          Escribe una regla para cambiarme el color sin que cambien los estilos
+          del ejercicio 4 y del ejercicio 5 y cuya especificidad no sea más de
+          (1,1,1).
+        </p>
+      </section>
+    </div>
+    <div class="container">
+      <h1 class="titulo">Ejercicio 7</h1>
+      <section>
+        <p class="ejercicio-7" id="parrafo-1">
+          Reescribe la regla reduciendo su especificidad a (0,3,0).
+        </p>
+      </section>
+    </div>
+    <div class="container">
+      <h1 class="titulo">Ejercicio 8</h1>
+      <section>
+        <p class="ejercicio-8">Hola, soy un párrafo.</p>
+        <p class="ejercicio-8">
+          Utiliza el selector de hermanos adyacentes "+" para subir la
+          especificidad y poder cambiar solo el color de este párrafo (recuerda
+          que el combinador "+" no tiene especificidad por sí mismo).
+        </p>
+      </section>
+    </div>
+    <div class="container">
+      <h1 class="titulo">Ejercicio 9</h1>
+      <p class="ejercicio-9">
+        Reescribe la primera regla para cambiarme el color sin usar !important y
+        sin cambiar el color del siguiente párrafo.
+      </p>
+      <p class="ejercicio-9">Hola, soy un párrafo.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+/* ================ ESCRIBE A PARTIR DE AQUÍ =============== */
+
+/* Ejercicio 1 */
+
+p {
+  color: red;
+}
+
+/* Ejercicio 2 */
+
+[id="ejercicio-2"] {
+  color: rgb(150, 150, 0);
+}
+
+/* Ejercicio 3 */
+
+.ejercicio-3 {
+  color: rgb(3, 83, 56);
+}
+
+/* Ejercicio 4 */
+
+#parrafo {
+  color: blueviolet;
+}
+
+/* Ejercicio 5 */
+
+#parrafo.ejercicio-esp {
+  color: brown;
+}
+
+/* Ejercicio 6 */
+
+section #parrafo.ejercicio-esp {
+  color: rgb(71, 1, 1);
+}
+
+/* Ejercicio 7 */
+
+.container .ejercicio-7[id="parrafo-1"] {
+  color: burlywood;
+}
+
+.container .ejercicio-7.ejercicio-7 {
+  color: burlywood;
+}
+
+/* Ejercicio 8 */
+
+.container .ejercicio-8 {
+  color: cyan;
+  + .ejercicio-8 {
+    color: rgb(88, 0, 202);
+  }
+}
+
+/* Ejercicio 9 */
+
+/* .container h1 + .ejercicio-9.ejercicio-9 {
+  color: plum;
+} */
+
+.container .ejercicio-9:nth-of-type(1) {
+  color: plum;
+}
+
+.container p.ejercicio-9 {
+  color: teal;
+}

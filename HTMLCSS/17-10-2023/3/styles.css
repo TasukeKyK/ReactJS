@@ -1,0 +1,26 @@
+:root {
+  padding: 0.6rem;
+  
+}
+
+p {
+  border: 1px solid red;
+}
+
+p.primero {
+  font-size: 16px;
+  margin-left: 1em;
+  border: 0.1rem solid black;
+  border-radius: 0.2px;
+  background-color: aquamarine;
+  
+}
+
+p.segundo {
+  font-size: 32px;
+  margin-left: 0.5em;
+  background-color: antiquewhite;
+  border-radius: 0.2px;
+  box-shadow: 3rem;
+  font-family: 'Alumni Sans Collegiate One', sans-serif; /* Buscado en google fonts */
+}
