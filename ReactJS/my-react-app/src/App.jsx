@@ -140,6 +140,7 @@ export default function App() {
           {errors.nationality.message}
         </p>
       }
+      <input type = "submit" />
     </form>
   </div>;
 }
