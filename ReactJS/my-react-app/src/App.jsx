@@ -1,35 +1,57 @@
-import { useState } from 'react'
+import React from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import * as Yup from 'yup';
+import * as Formik from "formik"
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const formik = Formik.useFormik({
+    initialValues: {
+      name: 'Pablo',
+      age: '',
+      nationality: 'Español',
+    },
+    validationSchema: Yup.object({
+      name: Yup.string().required(),
+      age: Yup.number().min(18, 'La edad minima es 18').required(),
+      nationality: Yup.string().required(),
+    }),
+    onSubmit: (values) => {
+      alert(`
+      NOMBRE : ${values.name}
+      EDAD : ${values.age}
+      NACIONALIDAD : ${values.nationality}
+      `);
+    },
+  });
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <form onSubmit={formik.handleSubmit}>
+        <label htmlFor="name">Nombre</label>
+        <input
+          name="name"
+          type="text"
+          value={formik.values.name}
+          onChange={formik.handleChange}
+        />
+        <label htmlFor="age">Edad</label>
+        <input
+          name="age"
+          type="text"
+          value={formik.values.age}
+          onChange={formik.handleChange}
+        />
+        <label htmlFor="natinonality">Nacionalidad</label>
+        <input
+          name="natinonality"
+          type="text"
+          value={formik.values.nationality}
+          onChange={formik.handleChange}
+        />
+      </form>
+    </div>
+  );
 }
 
-export default App
