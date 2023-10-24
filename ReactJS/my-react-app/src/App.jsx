@@ -36,6 +36,13 @@ export default function App() {
           value={formik.values.name}
           onChange={formik.handleChange}
         />
+        {
+          formik.errors.name && 
+          <p>
+            <b>Error: </b>
+            {formik.errors.name}
+          </p>
+        }
         <label htmlFor="age">Edad</label>
         <input
           name="age"
@@ -43,6 +50,13 @@ export default function App() {
           value={formik.values.age}
           onChange={formik.handleChange}
         />
+        {
+          formik.errors.age && 
+          <p>
+            <b>Error: </b>
+            {formik.errors.age}
+          </p>
+        }
         <label htmlFor="natinonality">Nacionalidad</label>
         <input
           name="natinonality"
@@ -50,6 +64,13 @@ export default function App() {
           value={formik.values.nationality}
           onChange={formik.handleChange}
         />
+        {
+          formik.errors.nationality && 
+          <p>
+            <b>Error: </b>
+            {formik.errors.nationality}
+          </p>
+        }
       </form>
     </div>
   );
